@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import '../app.scss';
+
+.content-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  height: 100%;
+
+  .left-section {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    .p-section {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 30%;
+      .city {
+        font-family: Roboto;
+        color: white;
+        font-weight: 500;
+        font-size: 50px;
+      }
+      .date {
+        font-family: Roboto;
+        color: white;
+        font-weight: 200;
+        font-size: 20px;
+      }
+    }
+    .img-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      div{
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        p{
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 20px;
+          color: white;
+        }
+        img{
+          max-width: 50px;
+        }
+      }
+    }
+  }
+  .right-section {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 40px;
+    @include mobile {
+      justify-content:center;
+    }
+    h1{
+      font-family: Roboto;
+      font-weight: 200;
+      color: white;
+      font-size: 180px;
+      align-self: flex-end;
+      @include mobile {
+        font-size: 50px;
+      }
+    }
+    .second{
+      font-size: 40px;
+      align-self: flex-end;
+    }
+  }
+}
