@@ -1,0 +1,87 @@
+@import '../app.scss';
+
+.noo{
+  .modal{
+  
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .no{
+      @include mobile{
+      width: 90%;
+      }
+      width: 60%;
+      height: 50%;
+      background-color:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      border-radius: 8px;
+      p{
+        font-family: Roboto;
+        font-size: 26px;
+      }
+      button{
+        padding: 20px 100px;
+        border: none;
+        background-color: rgba(225, 176, 235, 0.885);
+        border-radius: 30px;
+      }
+      button:active{
+        opacity: .5;
+      }
+    }
+  }
+  .form12{
+    position: fixed;
+    top: 3%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+      left: 3%;
+    }
+    button{
+      display: none;
+      @include mobile {
+        display: block;
+        width: 50%;
+        padding: 10px;
+        border: none;
+      }
+    }
+    button:active{
+      opacity: 0.5;
+    }
+    .input {
+      background-color: inherit;
+      border: 1px white solid;
+      padding: 20px 100px;
+      padding-left: 20px;
+      padding-right: 300px;
+      outline: none;
+      color: white;
+      font-size: 20px;
+      font-family: Roboto;
+      font-weight: 100;
+      @include mobile {
+        padding: 20px 80px;
+      }
+    }
+    ::placeholder {
+      color: white;
+      font-family: Roboto;
+      font-weight: 100;
+      font-size: 20px;
+    }
+  }
+}
